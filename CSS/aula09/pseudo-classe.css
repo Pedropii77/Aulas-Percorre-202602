@@ -1,0 +1,41 @@
+ol {
+    background-color: rebeccapurple;
+}
+
+li {
+    background: yellowgreen;
+}
+
+li:hover {
+    border: 2px solid red;
+    transition: 3s;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+}
+
+img:active {
+    width: 100%;
+    transition: 1s;
+}
+
+.revelacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rebeccapurple;
+    color: rebeccapurple;
+}
+
+.revelacao p:hover {
+    color: white;
+    font-size: 100px;
+}
+
+/* nth-child(2) seleciona o atributo filho na ordem específicado, ou seja, no caso abaixo estamos selecionado o li que é o quarto elemento dentro do OL. Isso é o que chamamos de pseudoclasse posicional */
+/* Caso seja necessário selecionar múltiplos itens é possível utilizar odd e even no lugar dos números para selecionar pares e ímpares */
+li:nth-child(){
+    background: yellow;
+}
